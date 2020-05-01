@@ -49,7 +49,10 @@ name = "西刺代理"
 # 爬取的 URL
 urls = [
 "https://www.xicidaili.com/nn/1",
-"https://www.xicidaili.com/nn/2"
+"https://www.xicidaili.com/nn/2",
+"https://www.xicidaili.com/nn/3",
+"https://www.xicidaili.com/nn/4",
+"https://www.xicidaili.com/nn/5"
 ]
 # 取出所在行的 XPATH
 xpath_line = ".//table[@id=\"ip_list\"]//tr[position()>1]"
@@ -64,7 +67,10 @@ enable = true
 name = "ProxyIpLib"
 urls = [
 "http://ip.jiangxianli.com/?page=1",
-"http://ip.jiangxianli.com/?page=2"
+"http://ip.jiangxianli.com/?page=2",
+"http://ip.jiangxianli.com/?page=3",
+"http://ip.jiangxianli.com/?page=4",
+"http://ip.jiangxianli.com/?page=5"
 ]
 xpath_line = ".//table//tr[position()>1]"
 xpath_col = "./td/text()"
@@ -97,7 +103,11 @@ info_index = [0, 1, 2, 3]
 [[spider.common_table]]
 enable = false
 name = "云代理"
-urls = ["http://www.ip3366.net/?stype=1&page=1"]
+urls = ["http://www.ip3366.net/?stype=1&page=1",
+"http://www.ip3366.net/?stype=1&page=2",
+"http://www.ip3366.net/?stype=1&page=3",
+"http://www.ip3366.net/?stype=1&page=4",
+"http://www.ip3366.net/?stype=1&page=5"]
 xpath_line = ".//table//tr[position()>1]"
 xpath_col = ".//td/text()"
 # TODO: 云代理返回的网页似乎是 GBK 编码的, 导致代理类型全部被判断为透明
